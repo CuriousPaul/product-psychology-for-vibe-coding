@@ -1,6 +1,6 @@
 # Product Psychology for Vibe Coding
 
-> **PM이 바이브코딩으로 제품을 만들 때, 심리학 기반 설계 원칙을 자동 적용하는 OpenClaw 스킬**
+> **PM이 바이브코딩으로 제품을 만들 때, 심리학 기반 설계 원칙을 자동 적용하는 Claude Code & OpenClaw 스킬**
 
 ---
 
