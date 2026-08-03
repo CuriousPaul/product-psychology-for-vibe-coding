@@ -195,3 +195,85 @@ Peak-End Rule을 적용하여 [서비스명]의 사용자 여정을 재설계해
 ## 출력
 단계별 화면 구성 + 각 화면에 적용된 심리학 원칙 주석
 ```
+
+---
+
+## 8. 스크린샷 화면 진단
+
+```
+제품 심리학 전문가로서 첨부한 화면을 Screen Diagnostic 방식으로 진단해줘.
+
+## 분석 대상
+[스크린샷 또는 화면 설명]
+
+## 진단 기준
+- Copy: 문구, 제목, CTA, 안내문이 구체적인가?
+- Focus: 가장 중요한 행동/정보가 바로 보이는가?
+- Hierarchy: 시선 순서와 그룹핑이 자연스러운가?
+- Friction: 이해, 입력, 선택, 접근성 부담이 낮은가?
+- Reward: 사용자가 얻는 결과, 진척, 안심이 보이는가?
+
+## 출력 형식
+Snapshot -> Score(/25) -> Sticky Notes 5-8개 -> Fix First 3개 -> After-State Brief
+
+각 sticky note는 아래 형식을 지켜줘:
+`CODE - 짧은 라벨`
+Observed: 화면에서 보이는 근거
+Psychology: B.I.A.S/BMAP/Peak-End 관점의 영향
+Fix: 구체적 수정 방향
+```
+
+---
+
+## 9. 진단 후 리디자인 요청
+
+```
+위 Screen Diagnostic의 Fix First 3개를 acceptance criteria로 삼아 화면을 리디자인해줘.
+
+## 리디자인 제약
+- 브랜드/톤: [브랜드 톤]
+- 유지해야 할 요소: [필수 문구, 기능, 버튼, 필드]
+- 바꿔도 되는 요소: [레이아웃, 카피, 우선순위 등]
+
+## 출력
+1. 변경 전 문제 요약
+2. 변경 후 화면 구조
+3. 주요 카피/CTA
+4. 각 변경이 어떤 점수 항목을 올리는지
+```
+
+---
+
+## 10. 화면 진단 JSON 추출
+
+```
+아래 화면 진단 결과를 trainer/scoring에 쓸 수 있게 JSON으로 변환해줘.
+
+## 입력
+[진단 결과 붙여넣기]
+
+## JSON 스키마
+{
+  "surface": "string",
+  "scores": {
+    "copy": 0,
+    "focus": 0,
+    "hierarchy": 0,
+    "friction": 0,
+    "reward": 0,
+    "total": 0
+  },
+  "findings": [
+    {
+      "code": "CPY|FOC|HIE|FRI|RWD",
+      "severity": "high|medium|low",
+      "evidence": "string",
+      "psychology": "string",
+      "fix": "string",
+      "expected_delta": 0
+    }
+  ],
+  "fix_first": ["string"],
+  "after_state_brief": ["string"]
+}
+```

@@ -20,6 +20,8 @@ Growth Design = Empathy Optimization. 사용자를 조종하는 게 아니라, �
 | **Peak-End** | 경험의 "평균"이 아니라 "정점"과 "마지막"을 기억함 | 사용자 여정 최적화 |
 | **윤리 체크** | Regret Test, Black Mirror Test, In Real-Life Test | 출시 전 검토 |
 
+추가로 **Screen Diagnostic** 모드는 위 프레임워크를 실제 화면 스크린샷에 적용해 Copy / Focus / Hierarchy / Friction / Reward 5축으로 점수화하고, 바로 고칠 sticky-note finding을 만든다.
+
 ---
 
 ## 설치 방법
@@ -61,7 +63,7 @@ curl -o ~/.claude/commands/ux-review.md \
   https://raw.githubusercontent.com/CuriousPaul/product-psychology-for-vibe-coding/main/references/review-checklist.md
 ```
 
-이제 Claude Code에서 `/ux-review` 명령어로 바로 사용 가능!
+명령 파일로 쓰려면 `references/prompt-templates.md`에서 필요한 템플릿을 골라 command 형태로 저장하세요.
 
 ---
 
@@ -74,6 +76,7 @@ product-psychology-for-vibe-coding/
 ├── LICENSE                       # MIT License
 └── references/
     ├── bias-framework.md         # B.I.A.S 상세 가이드
+    ├── screen-diagnostic.md      # 스크린샷 UI 진단 루브릭
     ├── review-checklist.md       # 통합 리뷰 체크리스트
     ├── ethics-checklist.md       # 윤리적 디자인 체크리스트
     └── prompt-templates.md       # PM용 프롬프트 템플릿
@@ -88,6 +91,7 @@ product-psychology-for-vibe-coding/
 - **문구/카피 작성**: CTA, 알림, 이메일, 에러 메시지 등
 - **기획/분석**: 사용자 여정 분석, 전환율 개선 가설, A/B 테스트 설계
 - **리뷰/피드백**: 기존 UI/UX에 대한 심리학 기반 리뷰
+- **스크린샷 진단**: AI가 만든 화면, 랜딩페이지, 대시보드, 온보딩을 점수화하고 우선 수정안을 제시
 
 ---
 
@@ -98,6 +102,18 @@ product-psychology-for-vibe-coding/
 3. **다음에 해야 할 행동이 명확한가?** (Act - Remove Options)
 4. **행동 후 피드백이 즉시 나오는가?** (Store - Clear Feedback)
 5. **이 화면을 사용자가 보고 있다면 후회할 것 같은 부분이 있는가?** (Ethics - Regret Test)
+
+## Screen Diagnostic
+
+화면 스크린샷을 받으면 아래 5축으로 점수화하고, 포스트잇처럼 짧은 finding을 만든다.
+
+- **Copy**: 문구와 CTA가 구체적인가?
+- **Focus**: 가장 중요한 행동/정보가 바로 보이는가?
+- **Hierarchy**: 시선 순서가 잡히는가?
+- **Friction**: 이해·입력·선택의 부담이 낮은가?
+- **Reward**: 사용자가 얻는 결과와 진척이 느껴지는가?
+
+출력은 `Snapshot -> Score -> Sticky Notes -> Fix First -> After-State Brief` 순서로 만든다.
 
 ---
 
