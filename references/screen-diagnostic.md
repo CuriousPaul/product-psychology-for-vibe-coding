@@ -13,7 +13,9 @@ The output must be visual, specific, prioritized, and teachable:
 3. Explain why it hurts user comprehension or action.
 4. Give a concrete fix direction.
 5. Prioritize the top 3 fixes.
-6. Avoid pretending to know analytics, user intent, or business context not visible in the screenshot.
+6. Include before/after comments for the priority fixes: what the current screen makes users think or do, and what the improved version should make easier.
+7. When the user asks for references, search the web for 2-4 comparable UI patterns, teardown examples, or product pages and explain what to borrow from each.
+8. Avoid pretending to know analytics, user intent, or business context not visible in the screenshot.
 
 ## Five-Dimension Rubric
 
@@ -75,12 +77,19 @@ Use "expected" or "likely"; do not imply measured impact without data.
 4. Pick the top 3 fixes.
    - Rank by impact on comprehension/action, not by visual taste.
    - Include expected total score delta if fixed.
+   - Add a brief before/after comment for each fix.
 
 5. Provide an after-state brief.
    - Do not generate a full redesign unless asked.
    - Describe the target screen in 4-6 bullets: headline, primary action, layout order, copy change, friction removal, reward signal.
 
-6. Ask for the next artifact only if needed.
+6. Add references when requested.
+   - Use web search for current public references rather than inventing examples.
+   - Prefer references that match the surface type: landing page, onboarding, pricing, dashboard, checkout, mobile app, or empty state.
+   - For each reference, include the source URL and one short "borrow this" note.
+   - Do not over-quote source pages; summarize the pattern in your own words.
+
+7. Ask for the next artifact only if needed.
    - If the user wants a redesign, ask for brand constraints or proceed with conservative assumptions if low risk.
 
 ## Output Template
@@ -112,11 +121,20 @@ Use "expected" or "likely"; do not imply measured impact without data.
 
 ## Fix First
 1. [Fix] - because [reason]. Expected total score delta: +N.
+   Before: [what the current screen likely makes users think/do].
+   After: [what the improved screen should clarify or enable].
 2. [Fix] - because [reason]. Expected total score delta: +N.
+   Before: ...
+   After: ...
 3. [Fix] - because [reason]. Expected total score delta: +N.
+   Before: ...
+   After: ...
 
 ## After-State Brief
 - ...
+
+## References
+- [Reference name](URL) - Borrow this: [specific pattern or decision].
 ```
 
 ## Style Rules
@@ -190,3 +208,9 @@ If the user asks to turn diagnosis into product logic:
 
 - Extract findings into structured JSON fields: `dimension`, `code`, `severity`, `evidence`, `psychology`, `fix`, `expected_delta`.
 - Use this as a first scoring schema for a future trainer product.
+
+If the user asks for references:
+
+- Search the web before answering.
+- Keep references subordinate to the diagnosis; they support the recommendation, not replace it.
+- Use reference examples to justify concrete screen decisions such as CTA hierarchy, social proof placement, pricing comparison, onboarding step order, or progress/payoff signals.

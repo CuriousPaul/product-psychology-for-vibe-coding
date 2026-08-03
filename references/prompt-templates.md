@@ -214,13 +214,21 @@ Peak-End Rule을 적용하여 [서비스명]의 사용자 여정을 재설계해
 - Reward: 사용자가 얻는 결과, 진척, 안심이 보이는가?
 
 ## 출력 형식
-Snapshot -> Score(/25) -> Sticky Notes 5-8개 -> Fix First 3개 -> After-State Brief
+Snapshot -> Score(/25) -> Sticky Notes 5-8개 -> Fix First 3개 -> Before/After 코멘트 -> After-State Brief -> References
 
 각 sticky note는 아래 형식을 지켜줘:
 `CODE - 짧은 라벨`
 Observed: 화면에서 보이는 근거
 Psychology: B.I.A.S/BMAP/Peak-End 관점의 영향
 Fix: 구체적 수정 방향
+
+Fix First 3개는 각각 아래까지 포함해줘:
+- 우선순위 이유
+- 예상 점수 개선폭
+- Before: 현재 화면에서 사용자가 어떻게 이해/행동할 가능성이 높은지
+- After: 개선 후 무엇이 더 선명해지는지
+
+가능하면 유사 레퍼런스를 웹에서 2-4개 찾아서 URL과 함께 "무엇을 빌릴지"를 붙여줘.
 ```
 
 ---
