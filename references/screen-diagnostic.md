@@ -14,8 +14,9 @@ The output must be visual, specific, prioritized, and teachable:
 4. Give a concrete fix direction.
 5. Prioritize the top 3 fixes.
 6. Include before/after comments for the priority fixes: what the current screen makes users think or do, and what the improved version should make easier.
-7. When the user asks for references, search the web for 2-4 comparable UI patterns, teardown examples, or product pages and explain what to borrow from each.
-8. Avoid pretending to know analytics, user intent, or business context not visible in the screenshot.
+7. Explicitly name the product psychology theories used in the diagnosis and connect each theory to the screen evidence.
+8. When the user asks for references, search the web for 2-4 comparable UI patterns, teardown examples, or product pages and explain what to borrow from each.
+9. Avoid pretending to know analytics, user intent, or business context not visible in the screenshot.
 
 ## Five-Dimension Rubric
 
@@ -65,31 +66,38 @@ Use "expected" or "likely"; do not imply measured impact without data.
    - Give total out of 25.
    - Add one sentence explaining the score pattern.
 
-3. Create sticky-note findings.
+3. Name the applied product psychology lens.
+   - Include 3-5 theories actually used in the diagnosis.
+   - Prefer B.I.A.S, BMAP Ability, BMAP Prompt, Peak-End, cognitive load, information scent, visual hierarchy, loss aversion, social proof, progressive disclosure, feedback loops, or ethical design.
+   - For each theory, explain how it appears in the screen in one sentence.
+   - Do not list theories that are not used in the findings.
+
+4. Create sticky-note findings.
    - Aim for 5-8 findings.
    - Each finding must be short enough to fit on a visual annotation.
    - Use this shape:
      - `CODE - Short label`
      - `Observed:` visible evidence
-     - `Psychology:` B.I.A.S/BMAP/Peak-End reason
+     - `Theory:` named product psychology principle
+     - `Psychology:` why that principle matters for comprehension/action
      - `Fix:` concrete direction
 
-4. Pick the top 3 fixes.
+5. Pick the top 3 fixes.
    - Rank by impact on comprehension/action, not by visual taste.
    - Include expected total score delta if fixed.
    - Add a brief before/after comment for each fix.
 
-5. Provide an after-state brief.
+6. Provide an after-state brief.
    - Do not generate a full redesign unless asked.
    - Describe the target screen in 4-6 bullets: headline, primary action, layout order, copy change, friction removal, reward signal.
 
-6. Add references when requested.
+7. Add references when requested.
    - Use web search for current public references rather than inventing examples.
    - Prefer references that match the surface type: landing page, onboarding, pricing, dashboard, checkout, mobile app, or empty state.
    - For each reference, include the source URL and one short "borrow this" note.
    - Do not over-quote source pages; summarize the pattern in your own words.
 
-7. Ask for the next artifact only if needed.
+8. Ask for the next artifact only if needed.
    - If the user wants a redesign, ask for brand constraints or proceed with conservative assumptions if low risk.
 
 ## Output Template
@@ -108,14 +116,20 @@ Use "expected" or "likely"; do not imply measured impact without data.
 | Reward | /5 |  |
 | Total | /25 |  |
 
+## Product Psychology Lens
+- **[Theory name]**: [How this screen triggers, violates, or can use the principle].
+- **[Theory name]**: ...
+
 ## Sticky Notes
 1. `FOC - [short issue]`
    Observed: ...
+   Theory: ...
    Psychology: ...
    Fix: ...
 
 2. `HIE - [short issue]`
    Observed: ...
+   Theory: ...
    Psychology: ...
    Fix: ...
 
@@ -167,26 +181,40 @@ Looks like a SaaS onboarding screen asking users to choose a workspace setup pat
 | Reward | 2/5 | The screen does not preview what users get after choosing. |
 | Total | 12/25 | The screen is usable, but weak prioritization makes the first action slower than it should be. |
 
+## Product Psychology Lens
+- **B.I.A.S - Block**: Similar-looking choices fail the user's attention filter because there is no recommended starting point.
+- **BMAP - Ability**: The screen asks users to choose before lowering decision effort or explaining consequences.
+- **Peak-End**: There is no early payoff preview, so the setup step feels like work before reward.
+
 ## Sticky Notes
 1. `FOC - Primary path is hidden`
    Observed: All setup options have similar size and emphasis.
+   Theory: B.I.A.S - Block
    Psychology: The screen fails the Block filter because nothing tells the user where to look first.
    Fix: Recommend one default path and visually mark it as the best starting point.
 
 2. `CPY - CTA lacks outcome`
    Observed: The button says "Continue" instead of naming what happens next.
+   Theory: B.I.A.S - Interpret
    Psychology: Weak Interpret clarity makes the click feel uncertain.
    Fix: Change to "Create workspace" or "Import team" depending on the selected path.
 
 3. `RWD - No payoff preview`
    Observed: The page asks for a setup decision but does not show the result.
+   Theory: Peak-End + BMAP Motivation
    Psychology: Users see work before reward, which weakens motivation.
    Fix: Add a small preview or progress note: "You will get a ready-to-use dashboard in 2 minutes."
 
 ## Fix First
 1. Make one path the recommended default - because it reduces decision effort. Expected total score delta: +3.
+   Before: Users must compare equal-looking options and guess which one is safest.
+   After: Users see a recommended path and can start without overthinking.
 2. Rewrite CTA copy around the next outcome - because it increases action confidence. Expected total score delta: +2.
+   Before: "Continue" hides the consequence of the click.
+   After: The CTA names the next outcome, so the click feels safer.
 3. Add a payoff preview - because it turns setup effort into visible progress. Expected total score delta: +2.
+   Before: The screen asks for work before showing what users get.
+   After: A preview or progress note makes the reward visible before commitment.
 
 ## After-State Brief
 - Headline explains the user goal, not the system task.

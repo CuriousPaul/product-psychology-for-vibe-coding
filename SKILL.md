@@ -128,9 +128,11 @@ PM이 바이브코딩 중 아래 작업을 할 때 이 스킬의 원칙들을 �
 4. 미감 취향보다 이해, 신뢰, 행동, 결정 속도에 미치는 영향을 우선한다.
 5. 가장 먼저 고칠 3개와 예상 점수 delta를 제시한다.
 6. 각 우선순위 fix마다 before/after 코멘트를 붙여 현재 인식과 개선 후 기대 상태를 구체화한다.
-7. 사용자가 레퍼런스를 원하면 웹에서 유사 사례를 찾아 URL과 "무엇을 빌릴지"를 함께 제시한다.
-8. 분석 뒤에는 4-6줄의 after-state brief를 준다.
-9. 분석 없이 곧바로 redesign image를 만들지 않는다. redesign 요청이 있으면 진단 결과의 top 3 fixes를 acceptance criteria로 삼는다.
+7. Product Psychology Lens 섹션에서 적용한 이론(B.I.A.S, BMAP, Peak-End, cognitive load, information scent 등)을 명시하고, 각 이론이 화면에서 어떻게 드러나는지 설명한다.
+8. 각 sticky-note finding에도 적용 이론명을 `Theory:`로 붙인다.
+9. 사용자가 레퍼런스를 원하면 웹에서 유사 사례를 찾아 URL과 "무엇을 빌릴지"를 함께 제시한다.
+10. 분석 뒤에는 4-6줄의 after-state brief를 준다.
+11. 분석 없이 곧바로 redesign image를 만들지 않는다. redesign 요청이 있으면 진단 결과의 top 3 fixes를 acceptance criteria로 삼는다.
 
 ---
 

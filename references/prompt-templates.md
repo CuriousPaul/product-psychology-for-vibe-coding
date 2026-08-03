@@ -214,12 +214,17 @@ Peak-End Rule을 적용하여 [서비스명]의 사용자 여정을 재설계해
 - Reward: 사용자가 얻는 결과, 진척, 안심이 보이는가?
 
 ## 출력 형식
-Snapshot -> Score(/25) -> Sticky Notes 5-8개 -> Fix First 3개 -> Before/After 코멘트 -> After-State Brief -> References
+Snapshot -> Score(/25) -> Product Psychology Lens -> Sticky Notes 5-8개 -> Fix First 3개 -> Before/After 코멘트 -> After-State Brief -> References
+
+Product Psychology Lens에는 실제 진단에 적용한 이론 3-5개를 명시해줘:
+- 예: B.I.A.S Block/Interpret/Act/Store, BMAP Motivation/Ability/Prompt, Peak-End, cognitive load, information scent, visual hierarchy, social proof, progressive disclosure, feedback loop, ethical design
+- 각 이론마다 "이 화면에서 어떻게 드러나는지"를 한 문장으로 설명
 
 각 sticky note는 아래 형식을 지켜줘:
 `CODE - 짧은 라벨`
 Observed: 화면에서 보이는 근거
-Psychology: B.I.A.S/BMAP/Peak-End 관점의 영향
+Theory: 적용한 제품 심리학 이론명
+Psychology: 그 이론 관점에서 사용자 이해/행동에 미치는 영향
 Fix: 구체적 수정 방향
 
 Fix First 3개는 각각 아래까지 포함해줘:
