@@ -238,7 +238,32 @@ Fix First 3개는 각각 아래까지 포함해줘:
 
 ---
 
-## 9. 진단 후 리디자인 요청
+## 9. 스크린샷 위 시각 피드백
+
+```
+제품 심리학 전문가로서 첨부한 화면을 CLEAR 기준으로 진단하고, 스크린샷 위에 직접 시각 피드백을 얹어줘.
+
+## 요청
+- 원본 스크린샷 위에 번호 핀, 하이라이트 박스, 짧은 sticky note를 표시
+- 긴 설명보다 Fix First 3개가 한 장에서 보이게 구성
+- 각 annotation에는 적용 이론을 짧게 표시
+- 필요하면 별도 텍스트 리포트로 Score / Product Psychology Lens / Before-After 코멘트를 덧붙이기
+
+## 색상 규칙
+- Red: 즉시 고칠 action blocker
+- Amber: 이해/선택/인지 부담
+- Blue: 위계/제어/구조 명확성
+- Green: 유지할 좋은 패턴
+
+## 출력
+1. Annotated screenshot 이미지
+2. Fix First 3개
+3. Annotation Map: 번호 / 영역 / 문제 / 이론 / 수정 방향
+```
+
+---
+
+## 10. 진단 후 리디자인 요청
 
 ```
 위 Screen Diagnostic의 Fix First 3개를 acceptance criteria로 삼아 화면을 리디자인해줘.
@@ -257,7 +282,7 @@ Fix First 3개는 각각 아래까지 포함해줘:
 
 ---
 
-## 10. 화면 진단 JSON 추출
+## 11. 화면 진단 JSON 추출
 
 ```
 아래 화면 진단 결과를 trainer/scoring에 쓸 수 있게 JSON으로 변환해줘.

@@ -20,7 +20,7 @@ Growth Design = Empathy Optimization. 사용자를 조종하는 게 아니라, �
 | **Peak-End** | 경험의 "평균"이 아니라 "정점"과 "마지막"을 기억함 | 사용자 여정 최적화 |
 | **윤리 체크** | Regret Test, Black Mirror Test, In Real-Life Test | 출시 전 검토 |
 
-추가로 **Screen Diagnostic** 모드는 위 프레임워크를 실제 화면 스크린샷에 적용해 Copy / Focus / Hierarchy / Friction / Reward 5축으로 점수화하고, 바로 고칠 sticky-note finding을 만든다.
+추가로 **Screen Diagnostic** 모드는 위 프레임워크를 실제 화면 스크린샷에 적용해 Copy / Focus / Hierarchy / Friction / Reward 5축으로 점수화하고, 바로 고칠 sticky-note finding을 만든다. 요청 시 **Visual Annotation Mode**로 원본 스크린샷 위에 번호 핀, 하이라이트, 짧은 sticky note를 얹은 피드백 이미지도 만든다.
 
 ---
 
@@ -113,7 +113,7 @@ product-psychology-for-vibe-coding/
 - **Friction**: 이해·입력·선택의 부담이 낮은가?
 - **Reward**: 사용자가 얻는 결과와 진척이 느껴지는가?
 
-출력은 `Snapshot -> Score -> Sticky Notes -> Fix First -> After-State Brief` 순서로 만든다.
+출력은 `Snapshot -> Score -> Product Psychology Lens -> Sticky Notes -> Fix First -> After-State Brief` 순서로 만든다. 스샷 위 시각 피드백을 요청받으면 `Annotated Screenshot -> Fix First -> Annotation Map`을 먼저 주고, 긴 리포트는 보조로 붙인다.
 
 ---
 

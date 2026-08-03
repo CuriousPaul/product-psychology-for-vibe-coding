@@ -17,6 +17,7 @@ The output must be visual, specific, prioritized, and teachable:
 7. Explicitly name the product psychology theories used in the diagnosis and connect each theory to the screen evidence.
 8. When the user asks for references, search the web for 2-4 comparable UI patterns, teardown examples, or product pages and explain what to borrow from each.
 9. Avoid pretending to know analytics, user intent, or business context not visible in the screenshot.
+10. When the user asks for feedback directly on the screenshot, produce a visual annotation artifact in addition to the written diagnosis.
 
 ## Five-Dimension Rubric
 
@@ -100,6 +101,47 @@ Use "expected" or "likely"; do not imply measured impact without data.
 8. Ask for the next artifact only if needed.
    - If the user wants a redesign, ask for brand constraints or proceed with conservative assumptions if low risk.
 
+## Visual Annotation Mode
+
+Use this mode when the user asks to put feedback on top of the screenshot, mark the screenshot visually, annotate the screen, make sticky notes on the image, or provide a visual critique.
+
+Create an annotated screenshot artifact when the runtime can render or export images. Prefer deterministic overlays over generative redraws:
+
+1. Preserve the original screenshot as the base image.
+2. Add numbered pins at the exact visible UI regions being discussed.
+3. Add translucent highlight boxes around the affected areas.
+4. Add compact margin notes or callout cards that map each number to:
+   - short issue label
+   - severity
+   - theory
+   - fix direction
+5. Keep the annotated image readable at chat preview size.
+6. Put only 3-6 high-signal annotations on the image; keep the full written diagnosis below or in a separate report.
+7. Use color consistently:
+   - Red: high-impact fix or action blocker
+   - Amber: decision/comprehension friction
+   - Blue: hierarchy/control clarity issue
+   - Green: good pattern to preserve
+8. Do not cover the UI region with long text. Put long explanations in the written report.
+9. If image rendering is not available, provide a text-only annotation map with approximate regions, for example `#1 top-right studio cards`, `#2 left source list`, `#3 bottom input`.
+
+Recommended visual output shape:
+
+```markdown
+## Visual Annotation
+[Attach annotated screenshot PNG/SVG/HTML capture]
+
+## Fix First
+1. `#1` [Fix] - Expected delta: +N.
+2. `#2` [Fix] - Expected delta: +N.
+3. `#3` [Fix] - Expected delta: +N.
+
+## Annotation Map
+| # | Region | Issue | Theory | Fix |
+|---:|---|---|---|---|
+| 1 | [visible area] | [short label] | [theory] | [fix direction] |
+```
+
 ## Output Template
 
 ```markdown
@@ -149,6 +191,28 @@ Use "expected" or "likely"; do not imply measured impact without data.
 
 ## References
 - [Reference name](URL) - Borrow this: [specific pattern or decision].
+```
+
+## Visual Annotation Template
+
+Use this shorter shape when the deliverable is an annotated image:
+
+```markdown
+## Visual Result
+[Annotated screenshot attached.]
+
+## Fix First
+1. `#1` [highest-impact fix]. Expected total score delta: +N.
+   Before: ...
+   After: ...
+2. `#2` ...
+3. `#3` ...
+
+## Reading The Image
+- Red callouts are immediate action blockers.
+- Amber callouts are comprehension or decision-friction issues.
+- Blue callouts are hierarchy/control clarity issues.
+- Green callouts are good patterns worth preserving.
 ```
 
 ## Style Rules

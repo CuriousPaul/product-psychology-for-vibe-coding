@@ -118,7 +118,7 @@ PM이 바이브코딩 중 아래 작업을 할 때 이 스킬의 원칙들을 �
 
 ### 스크린샷 UI 진단을 할 때
 
-사용자가 화면, 랜딩페이지, 대시보드, 온보딩, 가격표, 결제, 모바일 스크린샷을 주고 "포스트잇식으로", "어디부터 고쳐야 하냐", "점수화해줘", "화면 진단해줘"라고 요청하면 `references/screen-diagnostic.md`를 읽고 진단한다.
+사용자가 화면, 랜딩페이지, 대시보드, 온보딩, 가격표, 결제, 모바일 스크린샷을 주고 "포스트잇식으로", "어디부터 고쳐야 하냐", "점수화해줘", "화면 진단해줘"라고 요청하면 `references/screen-diagnostic.md`를 읽고 진단한다. 사용자가 "스샷 위에", "시각적으로", "annotate", "피드백 레이어", "표시해서"처럼 시각 피드백을 요청하면 같은 reference의 Visual Annotation Mode를 따른다.
 
 핵심 계약:
 
@@ -132,7 +132,8 @@ PM이 바이브코딩 중 아래 작업을 할 때 이 스킬의 원칙들을 �
 8. 각 sticky-note finding에도 적용 이론명을 `Theory:`로 붙인다.
 9. 사용자가 레퍼런스를 원하면 웹에서 유사 사례를 찾아 URL과 "무엇을 빌릴지"를 함께 제시한다.
 10. 분석 뒤에는 4-6줄의 after-state brief를 준다.
-11. 분석 없이 곧바로 redesign image를 만들지 않는다. redesign 요청이 있으면 진단 결과의 top 3 fixes를 acceptance criteria로 삼는다.
+11. 시각 피드백 요청 시 원본 스크린샷 위에 번호 핀, 하이라이트 박스, 짧은 margin note를 얹은 annotated image/SVG/HTML 산출물을 우선 만든다. 긴 리포트는 보조로 두고, 이미지에는 Fix First 3개와 핵심 sticky-note만 담는다.
+12. 분석 없이 곧바로 redesign image를 만들지 않는다. redesign 요청이 있으면 진단 결과의 top 3 fixes를 acceptance criteria로 삼는다.
 
 ---
 
